@@ -15,16 +15,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('backend.pages.dashboard.index');
+    return view('dashboard.index');
 });
 
+// Route::get('/', function () {
+//     return view('dashboard.index');
+// });
 // Route::get('/login', function () {
 //     return view('auth.index');
 // });
 
 Route::get('/karyawan', function () {
-    return view('backend.pages.template.index');
+    return view('employee.index');
 });
+
+// Route::get('/home', function () {
+//     return view('partials.sidemenu');
+// });
 
 Route::get('/tambah-karyawan', function () {
     return view('backend.pages.template.create');

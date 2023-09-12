@@ -1,4 +1,4 @@
-@extends('backend.master')
+@extends('master')
 @section('title')
     Karyawan
 @endsection

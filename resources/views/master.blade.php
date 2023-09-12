@@ -30,15 +30,15 @@
         </div>
     </div>
     <div id="main-wrapper">
-        @include('backend.partials.header')
+        @include('partials.header')
         <div class="dlabnav">
-            @include('backend.partials.sidemenu')
+            @include('partials.sidemenu')
         </div>
         <div class="content-body">
             @yield('content')
         </div>
     </div>
-    @include('backend.partials.footer')
+    @include('partials.footer')
     @section('js')
         <script src="{{ asset('assets/vendor/global/global.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>

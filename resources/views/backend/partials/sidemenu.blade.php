@@ -6,29 +6,45 @@
             </a>
         </li>
         <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
-                <i class="flaticon-050-info"></i>
+                <i class="bi bi-people-fill"></i>
                 <span class="nav-text">Employee</span>
             </a>
             <ul aria-expanded="false">
-                <li><a href="/karyawan">Index</a></li>
-                <li><a href="/tambah-karyawan">Create</a></li>
+                <li><a href="/karyawan">Employee Directory</a></li>
+                {{-- <li><a href="/tambah-karyawan">Create</a></li>
                 <li><a href="/user-profile">User Profile</a></li>
-                <li><a href="/login">Login</a></li>
+                <li><a href="/login">Login</a></li> --}}
             </ul>
         </li>
-        <li><a class="" href="javascript:void()" aria-expanded="false">
-                <i class="flaticon-093-waving"></i>
-                <span class="nav-text">Attendance</span>
+        <li><a class="has-arrow " href="#" aria-expanded="false">
+                <i class="bi bi-alarm"></i>
+                <span class="nav-text">Time Management</span>
             </a>
             <ul aria-expanded="false">
-                <li><a href="job-list.html">Lists</a></li>
+                <li><a href="job-list.html">Time Off</a></li>
+                <li><a href="job-list.html">Overtime</a></li>
+                <li><a href="job-list.html">Attendance</a></li>
+                <li><a href="job-list.html">Scheduller</a></li>
+                <li><a href="job-list.html">Calendar</a></li>
             </ul>
         </li>
-        <li><a class="" href="javascript:void()" aria-expanded="false">
+
+        <li><a class="has-arrow " href="#" aria-expanded="false">
+                <i class="bi bi-gear-fill"></i>
+                <span class="nav-text">Settings</span>
+            </a>
+            <ul aria-expanded="false">
+                <li><a href="job-list.html">Account Preferences</a></li>
+                <li><a href="job-list.html">Company</a></li>
+                <li><a href="job-list.html">Time Management</a></li>
+                <li><a href="job-list.html">Points</a></li>
+            </ul>
+        </li>
+        {{-- <li><a class="" href="javascript:void()" aria-expanded="false">
                 <i class="flaticon-086-star"></i>
                 <span class="nav-text">Time Management</span>
             </a>
-        </li>
+        </li> --}}
         <li><a class="" href="javascript:void()" aria-expanded="false">
                 <i class="flaticon-045-heart"></i>
                 <span class="nav-text">Schedule</span>
