@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthenticatedSessionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,9 +18,9 @@ Route::get('/', function () {
     return view('backend.pages.dashboard.index');
 });
 
-Route::get('/login', function () {
-    return view('backend.pages.login.login');
-});
+// Route::get('/login', function () {
+//     return view('auth.index');
+// });
 
 Route::get('/karyawan', function () {
     return view('backend.pages.template.index');
@@ -32,3 +33,6 @@ Route::get('/tambah-karyawan', function () {
 Route::get('/user-profile', function () {
     return view('backend.pages.login.user-profile');
 });
+
+Route::get('/login', [AuthenticatedSessionController ::class, 'index'])->name('login');
+Route::post('/login', [AuthenticatedSessionController ::class, 'authenticate'])->name('authenticate');
